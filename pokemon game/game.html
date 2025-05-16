@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POKÉMON BATTLE</title>
+  <link rel="stylesheet" href="game.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="game-container">
+    <div id="opening-screen">
+      <h1>POKÉMON BATTLE</h1>
+      <p>Get ready to fight!</p>
+      
+    </div>
+    <div id="battle-screen">
+      <div class="battle-area">
+        <div class="player-info" id="player1-name">
+          <span class="player-name"></span>
+        </div>
+        <div class="player-info" id="player2-name">
+          <span class="player-name"></span>
+        </div>
+        <div class="health-bar" id="player1-health">
+          <div class="health-fill" id="player1-health-fill"></div>
+        </div>
+        <div id="vs-box">VS</div>
+        <div class="health-bar" id="player2-health">
+          <div class="health-fill" id="player2-health-fill"></div>
+        </div>
+        <div class="pokemon" id="player1-pokemon"></div>
+        <div class="pokemon" id="player2-pokemon"></div>
+        <div class="attack-animation" id="pokemon1-attack"></div>
+        <div class="attack-animation" id="pokemon2-attack"></div>
+        <div class="message-log" id="message-log"></div>
+      </div>
+      <div class="controls">
+        <div class="player-controls">
+          <h3>Player 1 (WAS)</h3>
+          <button class="move-button" id="p1-move1"></button>
+          <button class="move-button" id="p1-move2"></button>
+          <button class="move-button" id="p1-move3"></button>
+          <button class="move-button" id="p1-move4"></button>
+        </div>
+        <div class="player-controls">
+          <h3>Player 2 (Arrow Keys)</h3>
+          <button class="move-button" id="p2-move1"></button>
+          <button class="move-button" id="p2-move2"></button>
+          <button class="move-button" id="p2-move3"></button>
+          <button class="move-button" id="p2-move4"></button>
+        </div>
+      </div>
+    </div>
+    <div id="win-screen">
+      <div class="win-content">
+        <h2 id="win-message"></h2>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
